@@ -1,6 +1,7 @@
 package diskSuanFa;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,13 +14,16 @@ public class main {
 //       ================= fcfs算法 ===================
 //        FCFS fcfs=new FCFS();
 //        fcfs.run01(nums,100);
-//        System.out.println("单链表显示"+new Output().outPut(nums));
+//        System.out.println("单链表显示"+new Output().outputAaary(nums));
 //       ================= sstf算法 ===================
 //        Map<Integer,Integer> map=new HashMap<>();
 //        map.put(1,2);
 //        System.out.println(map.get(1));
 
-        SSTF sstf=new SSTF();
-        sstf.sstf(nums,100);
+
+        SSTF2 sstf2=new SSTF2();
+        List<Integer> list = sstf2.run01(nums, 100);
+
+        System.out.println("单链表显示"+new Output().outputList(list));
     }
 }

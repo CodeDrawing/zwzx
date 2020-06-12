@@ -37,14 +37,15 @@ public class SSTF {
 //        }
         int j=0;
         boolean flag=true;
+        List<Integer> list1=new ArrayList<>();
         for (int i = size; i > 0; i--) {
             for (j = 0; j < list.size(); j++) {
                 if (Math.abs(list.get(j) - start) < min) {
-                    map.put(j, list.get(j));
-                    System.out.println(map);
-                    newList.add(map.get(j));
+//                    System.out.println(map);
+                    list.add(list.get(j));
                     min = Math.abs(list.get(j) - start);
 
+//                    map.put(j, list.get(j));
                     flag=false;
 
                 }
@@ -52,9 +53,10 @@ public class SSTF {
 
 //            start=map.get(temp);
             }
-            start = list.get(j);
+
+            start = list1.get(i);
             if(flag==false){
-                list.remove(j);
+                list.remove(j-1);
                 flag=true;
             }
         }
