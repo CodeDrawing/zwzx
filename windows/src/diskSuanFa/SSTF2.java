@@ -25,7 +25,6 @@ public class SSTF2 {
                     min = x;
                     temp = list.get(i);
                 }
-
             }
             min=200;
             sum=sum+min;
@@ -36,9 +35,6 @@ public class SSTF2 {
                     newList.add(temp);
                 }
             }
-
-
-
         }
         System.out.println(sum/nums.length);
         System.out.println(newList);
