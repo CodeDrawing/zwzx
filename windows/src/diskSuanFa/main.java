@@ -64,6 +64,7 @@ public class main {
 
         }else if(("其他").equals(choose)){
 
+
             System.out.println("退出");
 
         }else{
