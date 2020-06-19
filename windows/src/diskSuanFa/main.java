@@ -44,7 +44,7 @@ public class main {
         }else if(choose=="其他"){
 
         }else{
-            System.out.println("输入有误，程序结束");
+            System.out.println("输入有误。程序结束");
         }
 
 
