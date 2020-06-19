@@ -74,31 +74,6 @@ public class main {
         }
 
 
-//       ================= fcfs算法 ===================
-//        FCFS fcfs=new FCFS();
-//        fcfs.run01(nums,100);
-//        System.out.println("单链表显示"+new Output().outputAaary(nums));
-//       ================= SSTF算法 ===================
-
-//        long start=System.currentTimeMillis();
-//        System.out.println(start);
-//        SSTF2 sstf2=new SSTF2();
-//        List<Integer> list = sstf2.run01(nums, 100);
-//
-//        System.out.println("单链表显示"+new Output().outputList(list));
-//        System.out.println(System.currentTimeMillis()-start);
-
-//        ================= SCAN算法 ===================
-//        PaiXu paixu=new PaiXu();
-//        int[] ints = paixu.orderArrayDesc(nums);
-//        for (int anInt : ints) {
-//            System.out.println(anInt);
-//        }
-//            SCAN scan=new SCAN();
-//            scan.text01(nums,100);
-
-
-
 
 
     }
