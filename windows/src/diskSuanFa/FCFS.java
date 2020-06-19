@@ -16,10 +16,10 @@ public class FCFS {
 
                 sum=sum+Math.abs(nums[i+1]-nums[i]);
             }
-            System.out.println(sum);
+
         }
 
         double avg=sum/size;
-        System.out.println(avg);
+        System.out.println("平均寻道时间长度为"+avg);
     }
 }

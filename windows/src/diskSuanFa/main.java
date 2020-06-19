@@ -33,18 +33,40 @@ public class main {
         System.out.println("3、电梯调度算法<扫描算法SCAN>");
         System.out.println("其他：退出");
         System.out.println("请选择：");
-        String choose=input.nextLine();
-        System.out.println(choose);
-        if(choose=="1"){
 
-        }else if(choose=="2"){
+        String choose=input.next();
+        if(("1").equals(choose)){
 
-        }else if(choose=="3"){
+            System.out.println("你选择了先来先服务算法FCFS");
+            System.out.println("先来先服务算法的顺序为：");
 
-        }else if(choose=="其他"){
+            String fcfsNums = output.outputArray(ints);
+            System.out.println(fcfsNums);
+            FCFS fcfs=new FCFS();
+            fcfs.run01(ints,start);
+
+        }else if(("2").equals(choose)){
+
+            System.out.println("你选择了最短寻道时间优先算法SSTF");
+            System.out.println("最短寻道时间算法的顺序为：");
+            String s1 = output.outputArray(ints);
+            System.out.println(s1);
+            SSTF2 sstf2=new SSTF2();
+            sstf2.run01(ints, start);
+
+
+        }else if(("3").equals(choose)){
+
+            System.out.println("你选择了电梯调度算法<扫描算法SCAN>");
+
+        }else if(("其他").equals(choose)){
+
+            System.out.println("退出");
 
         }else{
+
             System.out.println("输入有误，程序结束");
+
         }
 
 

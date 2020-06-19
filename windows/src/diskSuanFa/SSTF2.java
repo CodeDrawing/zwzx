@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SSTF2 {
-    public List<Integer> run01(int[] nums, int start) {
+    public void run01(int[] nums, int start) {
         //新建一个list集合，把nums转换成集合来操作
         List<Integer> list = new ArrayList<>();
 //        新的集合
@@ -26,9 +26,11 @@ public class SSTF2 {
                     temp = list.get(i);
                 }
             }
-            min=200;
+
             sum=sum+min;
             start=temp;
+//            设置一个尽量较大的数
+            min=10000;
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) == temp) {
                     list.remove(i);
@@ -36,8 +38,11 @@ public class SSTF2 {
                 }
             }
         }
-        System.out.println(sum/nums.length);
-        System.out.println(newList);
-        return newList;
+        Output output=new Output();
+
+
+        System.out.println(output.outputList(newList));
+        System.out.println("平均寻道长度为"+sum/nums.length);
+
     }
 }
