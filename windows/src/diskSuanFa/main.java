@@ -31,13 +31,17 @@ public class main {
         System.out.println("1、先来先服务算法FCFS");
         System.out.println("2、最短寻道实践优先算法SSTF");
         System.out.println("3、电梯调度算法<扫描算法SCAN>");
+        System.out.println("其他：退出");
+        System.out.println("请选择：");
+        String choose=input.nextLine();
+        System.out.println(choose);
+        if(choose=="1"){
 
-        int choose=input.nextInt();
-        if(choose==1){
+        }else if(choose=="2"){
 
-        }else if(choose==2){
+        }else if(choose=="3"){
 
-        }else if(choose==3){
+        }else if(choose=="其他"){
 
         }else{
             System.out.println("输入有误。程序结束");
