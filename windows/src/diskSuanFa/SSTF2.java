@@ -12,7 +12,8 @@ public class SSTF2 {
         for (int num : nums) {
             list.add(num);
         }
-        int min = Math.abs(list.get(0) - start);
+//        int min = Math.abs(list.get(0) - start);
+        int min = 10000;
         int x = 0;
         int temp = 0;
         int len = list.size();

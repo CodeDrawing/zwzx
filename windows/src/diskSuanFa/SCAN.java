@@ -49,7 +49,7 @@ public class SCAN {
         String s = output.outputList(maxList);
         System.out.println(s);
 
-        System.out.println((float) sum/(float)nums.length);
+        System.out.println("平均寻道长度为："+(float) sum/(float)nums.length);
 
 
     }

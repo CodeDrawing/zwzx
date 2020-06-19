@@ -58,6 +58,9 @@ public class main {
         }else if(("3").equals(choose)){
 
             System.out.println("你选择了电梯调度算法<扫描算法SCAN>");
+            System.out.println("扫描算法的顺序为：");
+            SCAN scan=new SCAN();
+            scan.text01(ints,start);
 
         }else if(("其他").equals(choose)){
 
